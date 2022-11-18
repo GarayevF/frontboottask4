@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #101010;
+}
+
+#Header {
+  padding: 19px 0;
+}
+#Header .container-custom {
+  padding: 0 1rem;
+}
+#Header .navbar-brand div {
+  width: 185px;
+}
+#Header .navbar-toggler i:nth-child(2) {
+  font-size: 25px;
+  margin-left: 20px;
+  color: #fff;
+}
+#Header .navbar-toggler i:nth-child(1) {
+  font-size: 15px;
+  color: #fff;
+  position: relative;
+}
+#Header .navbar-toggler i:nth-child(1)::after {
+  content: "0";
+  position: absolute;
+  bottom: 60%;
+  left: 60%;
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 100%;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Header .collapse a {
+  margin-left: 36px;
+  font-size: 17px;
+  color: #fff;
+}
+#Header .collapse a:last-child {
+  border: 2px solid #b1b4c1;
+  color: #c6c9d8;
+  padding: 10px 1.5rem;
+  font-size: 14px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+#Header .collapse a:first-child {
+  color: red;
+}
+#Header .collapse i {
+  color: #fff;
+  margin: 0 30px;
+  position: relative;
+}
+#Header .collapse i::after {
+  content: "0";
+  position: absolute;
+  bottom: 60%;
+  left: 60%;
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 100%;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Content {
+  padding: 5rem 0;
+}
+#Content .container .title-div {
+  width: 600px;
+}
+#Content .container .title-div h1 {
+  font-size: 100px;
+  color: red;
+  font-weight: 900;
+}
+
+#Cards {
+  padding: 1rem 0;
+}
+#Cards .container .img-div {
+  width: 100px;
+  margin-bottom: 1.5rem;
+}
+#Cards .container .card-body {
+  padding-bottom: 1rem;
+}
+#Cards .container .card-body h1 {
+  font-size: 30px;
+  color: #c6c9d8;
+  font-weight: 300;
+}
+#Cards .container .card-body h3 {
+  font-size: 20px;
+  color: #c6c9d8;
+  font-weight: 200;
+}
+
+#About {
+  background-color: #191919;
+  margin-top: 10rem;
+}
+#About .container .row .img-div {
+  transform: translateY(-6rem);
+}
+#About .container .row .about-title {
+  padding: 0 0 2rem 3rem;
+}
+#About .container .row .about-title p {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#About .container .row .about-title h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 30px;
+}
+#About .container .row .about-title h3 {
+  color: rgba(198, 201, 216, 0.7490196078);
+  font-size: 20px;
+  font-weight: 300;
+}
+#About .container .row .about-stats {
+  padding: 2rem 0 2rem 3rem;
+}
+#About .container .row .about-stats p {
+  color: red;
+  margin: 2rem 0 2rem 0;
+}
+#About .container .row .about-stats h1 {
+  color: red;
+  font-size: 60px;
+}
+#About .container .row .about-stats .col-lg-4 {
+  position: relative;
+}
+#About .container .row .about-stats .col-lg-4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15%;
+  height: 1%;
+  background-color: red;
+}
+
+#Services {
+  padding: 4rem 0;
+}
+#Services .container .title-div p {
+  color: red;
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+#Services .container .title-div h1 {
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+#Services .container .title-div h3 {
+  font-size: 18px;
+  color: rgba(198, 201, 216, 0.7490196078);
+  margin-bottom: 2rem;
+}
+#Services .container .cards-div .col-lg-6 .custom-card {
+  background-color: #191919;
+  padding: 2rem;
+}
+#Services .container .cards-div .col-lg-6 .custom-card .title-div h1 {
+  font-size: 24px;
+  padding-left: 20px;
+}
+#Services .container .cards-div .col-lg-6 .custom-card .title-div svg {
+  color: red;
+}
+#Services .container .cards-div .col-lg-6 .custom-card .body-div {
+  margin-left: 54px;
+  padding: 0 5rem 0 20px;
+}
+#Services .container .cards-div .col-lg-6 .custom-card .body-div h3 {
+  color: rgba(198, 201, 216, 0.7490196078);
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  #Header .container-custom {
+    padding: 0 0;
+  }
+  #Header .navbar-brand div {
+    width: 140px;
+  }
+  #Content .container .title-div {
+    width: 300px;
+  }
+  #Content .container .title-div h1 {
+    font-size: 50px;
+  }
+  #Cards .row .img-div {
+    width: 50px;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,253 @@
+@import '_reset.scss';
+
+#Header{
+    padding: 19px 0;
+    .container-custom{
+        padding: 0 1rem;
+    }
+    .navbar-brand{
+        div{
+            width: 185px;
+        }
+    }
+    .navbar-toggler{
+        i:nth-child(2){
+            font-size: 25px;
+            margin-left: 20px;
+            color: #fff;
+        }
+        i:nth-child(1){
+            font-size: 15px;
+            color: #fff;
+            position: relative;
+            &::after{
+                content: '0';
+                position: absolute;
+                bottom: 60%;
+                left: 60%;
+                width: 15px;
+                height: 15px;
+                background-color: red;
+                border-radius: 100%;
+                font-size: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    .collapse{
+        a{
+            margin-left: 36px;
+            font-size: 17px;
+            color: #fff;
+        }
+        a:last-child{
+            border: 2px solid #b1b4c1;
+            color: #c6c9d8;
+            padding: 10px 1.5rem;
+            font-size: 14px;
+            border-radius: 6px;
+            white-space: nowrap;         
+        }
+        a:first-child{
+            color: red;
+        } 
+
+        i{
+            color: #fff;
+            margin: 0 30px;
+            position: relative;
+            &::after{
+                content: '0';
+                position: absolute;
+                bottom: 60%;
+                left: 60%;
+                width: 15px;
+                height: 15px;
+                background-color: red;
+                border-radius: 100%;
+                font-size: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        
+    }
+}
+
+#Content{
+    padding: 5rem 0;
+    .container{
+        .title-div{
+            width: 600px;
+            h1{
+                font-size: 100px;
+                color: red;
+                font-weight: 900;
+            }
+        }
+    }
+}
+
+#Cards{
+    padding: 1rem 0;
+    .container{
+        .img-div{
+            width: 100px;
+            margin-bottom: 1.5rem;
+        }
+        .card-body{
+            padding-bottom: 1rem;
+            h1{
+                font-size: 30px;
+                color: #c6c9d8;
+                font-weight: 300;
+            }
+            h3{
+                font-size: 20px;
+                color: #c6c9d8;
+                font-weight: 200;
+            }
+        }
+    }
+}
+
+#About{
+    background-color: #191919;
+    margin-top: 10rem;
+    .container{
+        .row{
+            .img-div{
+                transform: translateY(-6rem);
+            }
+            .about-title{
+                padding: 0 0 2rem 3rem;
+                p{
+                    color: red;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+                h1{
+                    font-size: 50px;
+                    font-weight: bold;
+                    color: #fff;
+                    margin-bottom: 30px;
+                }
+                h3{
+                    color: #c6c9d8bf;
+                    font-size: 20px;
+                    font-weight: 300;
+                }
+            }
+            .about-stats{
+                padding: 2rem 0 2rem 3rem;
+                p{
+                    color: red;
+                    margin: 2rem 0 2rem 0;
+                }
+                h1{
+                    color: red;
+                    font-size: 60px;
+                }
+
+                .col-lg-4{
+                    position: relative;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 15%;
+                        height: 1%;
+                        background-color: red;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#Services{
+    padding: 4rem 0;
+        .container{
+           
+            .title-div{
+                p{
+                    color: red;
+                    font-size: 20px;
+                    margin-bottom: 1rem;
+                }
+                h1{
+                    font-size: 40px;
+                    color: #fff;
+                    margin-bottom: 1rem;
+                }
+                h3{
+                    font-size: 18px;
+                    color: #c6c9d8bf;
+                    margin-bottom: 2rem;
+                }
+            }
+
+            .cards-div{
+                .col-lg-6{
+                    .custom-card{
+                        background-color: #191919;
+                        padding: 2rem;
+                        .title-div{
+                            h1{
+                                font-size: 24px;
+                                padding-left: 20px;
+                            }
+                            svg{
+                                color: red;
+                            }
+                        }
+                        .body-div{
+                            margin-left: 54px;
+                            padding: 0 5rem 0 20px;
+                            h3{
+                                color: #c6c9d8bf;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+}
+
+@media (max-width: 768px) {
+    #Header{
+        .container-custom{
+            padding: 0 0;
+        }
+        .navbar-brand{
+            div{
+                width: 140px;
+            }
+        }
+    }
+
+    #Content{
+        .container{
+            .title-div{
+                width: 300px;
+                h1{
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+
+    #Cards{
+        .row{
+            .img-div{
+                width: 50px;
+            }
+        }
+    }
+}
